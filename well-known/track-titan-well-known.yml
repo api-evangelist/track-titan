@@ -1,0 +1,71 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of tracktitan.io hosts
+hosts:
+- host: https://www.tracktitan.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+- host: https://tracktitan.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+- host: https://api.tracktitan.io
+  note: Backend service host (responds "TTVulcan.Prod Service" at root); no public
+    spec, docs, or discovery documents found.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+- host: https://app.tracktitan.io
+  note: All probes returned HTTP 429 (rate limited); statuses recorded as observed.
+  documents:
+  - path: /.well-known/security.txt
+    status: 429
+  - path: /.well-known/openid-configuration
+    status: 429
+  - path: /.well-known/oauth-authorization-server
+    status: 429
+  - path: /.well-known/api-catalog
+    status: 429
+  - path: /.well-known/ai-plugin.json
+    status: 429
+  - path: /llms.txt
+    status: 429
+  - path: /robots.txt
+    status: 429

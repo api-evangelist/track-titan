@@ -1,8 +1,26 @@
 aid: track-titan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/track-titan.png
 name: Track Titan
-description: 'Track Titan is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Track Titan is a sim racing analytics and coaching platform that records
+  in-game telemetry from simulators including iRacing, Assetto Corsa and ACC, the F1
+  series, Automobilista 2, Forza Motorsport, and Le Mans Ultimate, turning laps into
+  time-loss analysis, AI coaching feedback, auto-installed esports car setups, and
+  structured Academy learning content for a community of over 295,000 sim racers on
+  PC and console. Founded by former professional sim racer and Porsche coach Max
+  Teichert and backed by investors including Partech, Track Titan is a consumer
+  product and publishes no public developer API, SDK, or documentation surface as
+  of July 2026 (api.tracktitan.io serves only an internal backend service).'
 url: https://raw.githubusercontent.com/api-evangelist/track-titan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Sim Racing
+- Telemetry
+- Gaming
+- Motorsports
+- Coaching
+- Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,28 @@ maintainers:
 common:
 - type: Website
   url: https://www.tracktitan.io/
+- type: Blog
+  url: https://tracktitan.io/blog
+- type: Support
+  url: https://intercom.help/track-titan/en/
+- type: Pricing
+  url: https://tracktitan.io/memberships
+- type: SignUp
+  url: https://app.tracktitan.io/register
+- type: Login
+  url: https://app.tracktitan.io/login
+- type: TermsOfService
+  url: https://www.tracktitan.io/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://app.privasee.io/privacy-portal/64356fd7fe320800131b3ccd
+- type: LLMsTxt
+  url: llms/track-titan-llms.txt
+- type: WellKnown
+  url: well-known/track-titan-well-known.yml
+- type: DomainSecurity
+  url: security/track-titan-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
